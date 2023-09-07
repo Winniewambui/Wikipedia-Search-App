@@ -1,0 +1,118 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(248,250,252);
+}
+main{
+    overflow-x: none;
+}
+.main-container{
+    display: grid;
+    place-items: center;
+    min-height: 10vh;
+}
+.section-center{
+    display: flex;
+    flex-direction:column;
+    column-gap: 0;
+justify-content: center;
+align-items: center;
+height: 800px;
+width: 100%;
+margin-top: 0;
+}
+.image{
+width: 250px;
+height: 230px;
+margin-bottom: 0px;
+background-color: transparent;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+align-items: center;
+text-align: center;
+background-color: white;
+border-radius: 10px;
+width: 800px;
+height: 150px;
+margin-top: 10px;
+}
+.input-field{
+    width: 38em;
+    height: 39px;
+    background-color: rgb(248,250,252);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: transparent;
+    outline: none;
+    border: 1px solid rgb(212, 211, 211);
+}
+.search-btn{
+    padding: 10px 30px;
+    height: 40px;
+      border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none; 
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(24, 68, 211);
+    border: 1px solid rgb(212, 211, 211);
+}
+.search-btn:hover{
+    color: black;
+}
+
+@media screen and (max-width: 480px){
+    .main-container{
+        max-width: 300px;
+    }
+    .section-center{
+    height: 500px;
+    width: 100%;
+    margin-top: 0;
+    }
+    .image{
+    width: 150px;
+    height: 130px;
+    }
+    h4{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    #form{
+    width: 360px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    }
+    .input-field{
+        width: 18em;
+        height: 30px;
+        background-color: rgb(248,250,252);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: transparent;
+        outline: none;
+        border: 1px solid rgb(212, 211, 211);
+    }
+    .search-btn{
+        height: 31px;
+        padding: 0 15px;
+        padding-top: 5px;
+        font-size: 18px;
+    }
+}
