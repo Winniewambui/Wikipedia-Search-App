@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     background-color: rgb(248,250,252);
-}
+} */
 main{
     overflow-x: none;
 }
@@ -75,7 +75,91 @@ margin: 10px 15px;
 .search-btn:hover{
     color: black;
 }
+.results {
+ margin: -90px auto;
+  }
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .articles a {
+    width: 500px;
+    height: 300px;
+    text-decoration: none;
+    display: block;
+    background: white;
+    color: rgb(44, 44, 44);
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  .articles p {
+    color: rgb(156, 153, 153);
+    transition: color 0.3s ease;
+  }
+  
+  .articles a:hover {
+    background:black;
+    color: white;
+  }
+  .error {
+    text-align: center;
+    text-transform: capitalize;
+    color: red;
+  }
 
+  /* tablet */
+  @media screen and (max-width: 786px){
+    .section-center{
+    height: 800px;
+    width: 700px;
+    margin-top: 0;
+    }
+    .image{
+    width: 200px;
+    height: 180px;
+    }
+    h4{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    #form{
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    height: 120px;
+    margin: 10px 15px;
+    }
+    .input-field{
+        width: 30em;
+        height: 39px;
+    }
+    .search-btn:hover{
+        color: black;
+    }
+    .results {
+     margin: -120px auto;
+      }
+      .articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.0rem;
+      }
+      
+      .articles a {
+        width: 350px;
+        height: 300px;
+        padding: 1.0rem 2rem;
+      }
+  } 
+
+  /* mobile phones */
 @media screen and (max-width: 480px){
     .main-container{
         max-width: 300px;
@@ -94,13 +178,13 @@ margin: 10px 15px;
         margin-bottom: 10px;
     }
     #form{
-    width: 360px;
+    width: 300px;
     height: 100px;
     margin-top: 10px;
     border-radius: 5px;
     }
     .input-field{
-        width: 18em;
+        width: 14em;
         height: 30px;
         background-color: rgb(248,250,252);
         border-top-left-radius: 5px;
@@ -111,8 +195,26 @@ margin: 10px 15px;
     }
     .search-btn{
         height: 31px;
-        padding: 0 10px;
+        padding: 0 8px;
         padding-top: 5px;
         font-size: 18px;
     }
+    .results {
+        margin: 0px auto;
+         }
+         .articles {
+           display: grid;
+           grid-template-columns: repeat(1, 1fr);
+           gap: 0.8rem;
+         }
+         .articles a {
+           width: 300px;
+           height: 250px;
+           padding: 0.7rem 1rem;
+         }
+         .error {
+           text-align: center;
+           text-transform: capitalize;
+           color: red;
+         }
 }
